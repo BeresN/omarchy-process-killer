@@ -4,6 +4,8 @@ A small bar widget for the [Omarchy](https://omarchy.org) shell that lists your
 running apps and heavy background processes, each with an **X** button to kill
 it — no more hunting for PIDs in a terminal.
 
+<img width="447" height="545" alt="image" src="https://github.com/user-attachments/assets/839b83b9-7740-4819-8acf-cf3aa1a2b109" />
+
 ## Features
 
 - **Windows**: every app that owns a Hyprland window (browser, terminal, editor…).
