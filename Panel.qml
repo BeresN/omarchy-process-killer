@@ -257,15 +257,14 @@ Panel {
                 width: listColumn.width
                 spacing: Style.space(8)
 
+                // Column skips invisible children, so hidden headers take no space.
                 PanelSeparator {
                   visible: startsSection && index > 0
-                  height: visible ? implicitHeight : 0
                   foreground: root.bar.foreground
                 }
 
                 PanelSectionHeader {
                   visible: startsSection
-                  height: visible ? implicitHeight : 0
                   text: modelData.section === "windows" ? "WINDOWS" : "BACKGROUND (≥ " + root.minMemoryMB + " MB)"
                   foreground: root.bar.foreground
                   fontFamily: root.bar.fontFamily
