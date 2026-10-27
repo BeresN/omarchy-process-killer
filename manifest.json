@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.beresn.process-killer",
+  "name": "Process Killer",
+  "version": "1.0.0",
+  "author": "BeresN",
+  "license": "MIT",
+  "description": "Bar widget listing your running apps and heavy background processes, each with an X button to kill it.",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "Panel.qml"
+  },
+  "barWidget": {
+    "displayName": "Process Killer",
+    "description": "Kill apps and processes with one click.",
+    "category": "System",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": { "minMemoryMB": 50 },
+    "schema": [
+      { "key": "minMemoryMB", "type": "integer", "label": "Show background processes from (MB)" }
+    ]
+  }
+}
